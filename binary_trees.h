@@ -8,15 +8,13 @@
 #include <limits.h>
 
 /**
- * @brief 
- * 
- */
+ * struct binary_tree_s - Binary tree node
  *
  * @n: Integer stored in the node
  * @parent: Pointer to the parent node
  * @left: Pointer to the left child node
  * @right: Pointer to the right child node
- */
+ **/
 struct binary_tree_s
 {
     int n;
@@ -36,10 +34,10 @@ typedef struct link_s
 	size_t n;
 	struct binary_tree_s const *node;
 	struct link_s *next;
-}link_t;
-void binary_tree_print(const binary_tree_t *)
-binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
-binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
+} link_t;
+void binary_tree_print(const binary_tree_t *);
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 void binary_tree_delete(binary_tree_t *tree);
 int binary_tree_is_leaf(const binary_tree_t *node);
