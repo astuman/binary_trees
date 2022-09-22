@@ -5,7 +5,7 @@
  * @parent: node parent
  * @value: Value of the node
  * Return: the new node
- **/
+ */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
